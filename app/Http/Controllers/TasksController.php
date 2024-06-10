@@ -69,5 +69,11 @@ class TasksController extends Controller
         }
         return response()->json($updatestus);
     }
+    public function deleteTasksChage(Request $request)
+    {
+        $searchTerm = $request->input('items');
+        return response()->json($searchTerm);
+    }
+
 
 }

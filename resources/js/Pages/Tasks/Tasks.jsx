@@ -25,8 +25,12 @@ function Tasks(props) {
         { id: 3, label: 'Opportunités', icon: '/image/tab3.png' },
         { id: 4, label: 'Tâches', icon: '/image/tab4.png' },
     ];
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = useState(false);
+    const [deletedatarow, setdatarowdelete] = useState([]);
+
+
     const onChangeCheckbox = (e, value, isall) => {
+
 
     }
     const handleEdit = () => {
@@ -178,34 +182,7 @@ function Tasks(props) {
 
     const [DataRowShow, setDataRowShow] = useState([]);
     const [CurrentPage, setCurrentPage] = useState(1);
-    // useEffect(() => {
-    //     // console.log(DataRow,"DataRow");
-    //     // setTotalRecord(DataRow.length)
 
-    //     // renderOptionlimit();
-    //     setDataRowShow(DataRow);
-    //     setTotalRecord(DataRow.length)
-    // }, [DataRow])
-
-
-
-    // useEffect(() => {
-    //     const indexOfLastData = CurrentPage * ValueSelectLimit.value;
-    //     const indexOfFirstData = indexOfLastData - ValueSelectLimit.value;
-    //     const currentData = DataRow.slice(indexOfFirstData, indexOfLastData);
-    //     console.log(currentData,"currentData");
-    //     setDataRowShow(currentData)
-    // }, [ValueSelectLimit, CurrentPage])
-
-    // useEffect(() => {
-    //     if (DataRowShow[isChangeIndex]) {
-    //         DataRowShow[isChangeIndex].status = ValueStatus
-    //         setDataRowShow(DataRowShow)
-    //         setisChangeData(!isChangeData)
-    //     }
-
-
-    // }, [isChangeIndex, ValueStatus])
 
 
     const getStatusText = (e) => {
@@ -236,9 +213,7 @@ function Tasks(props) {
     }
 
 
-    const onChangeCheck = (e) => {
 
-    }
     const onChangeSelectNumPages = (e) => {
         const selectedValue = e.id;
         setValueLimit({ id: selectedValue, name: selectedValue.toString() });
@@ -364,7 +339,10 @@ function Tasks(props) {
                     DataRow={DataRow}
                     ischeckbox={true}
                     isboder={false}
-                    onChangeCheck={onChangeCheck}
+                    onChangeCheck={(data) => {
+                        setdatarowdelete(data)
+                    }}
+
                 />
                 <Pagination style={{ marginTop: "5px" }}
                     Options={OptionsPagi}

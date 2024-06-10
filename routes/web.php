@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/tasks',[TasksController::class, 'loadTask']);
         Route::get('/tasks-table', [TasksController::class, 'loadTableTask']);
         Route::post('/status-change', [TasksController::class, 'statusChage']);
+        Route::post('/delete-tasks-table', [TasksController::class, 'deleteTasksChage']);
     });
 
 });

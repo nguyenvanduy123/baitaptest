@@ -1,0 +1,33 @@
+.date-picker-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .date-picker-input {
+    padding-left: 2.5rem; /* Space for the icon */
+    background-color: rgb(46, 55, 69);
+    color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 35px;
+    padding: 4px 40px;
+    width: calc(128% - 2px);
+    box-sizing: border-box;
+    margin-left: 10px;
+  }
+
+  .date-picker-icon {
+    position: absolute;
+    left: 0; /* Adjust as needed */
+    color: #ffffff; /* Set the icon color to black */
+    pointer-events: none;
+    font-size: 1.5rem; /* Adjust icon size */
+    padding-left: 0.5rem; /* Adjust icon position */
+  }
+  .react-datepicker-wrapper {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    margin-left: -10px; /* Pull the input back to align properly */
+  }

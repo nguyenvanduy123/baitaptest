@@ -1,0 +1,27 @@
+.time-picker-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .time-picker-input {
+    padding-left: 2.5rem; /* Space for the icon */
+    background-color: #fff; /* White background */
+    color: #000; /* Black text color */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 2.5rem; /* Adjust as needed */
+    padding: 0.5rem; /* Adjust as needed */
+    width: calc(100% - 10px); /* Adjust width to consider the margin */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    margin-left: 10px; /* Push input to the right by 10px */
+  }
+
+  .time-picker-icon {
+    position: absolute;
+    left: 0.5rem;
+    color: #000; /* Set the icon color to black */
+    pointer-events: none;
+    font-size: 1.5rem; /* Adjust icon size */
+    padding-left: 0.5rem; /* Adjust icon position */
+  }
