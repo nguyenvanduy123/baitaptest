@@ -7,7 +7,7 @@
 7.php artisan db:seed --class=MenuSeeder 
 8.php artisan db:seed --class=StatusSeeder
 9.php artisan db:seed --class=TaskSeeder 
-chạy php artisan serve và npm run dev cùng lúc
-vào http://127.0.0.1:8000/
+10.chạy php artisan serve và npm run dev cùng lúc
+11.vào http://127.0.0.1:8000/
 user:nguyenvanduybin123@gmail.com
 pass:123456789
