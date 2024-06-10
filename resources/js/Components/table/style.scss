@@ -1,0 +1,90 @@
+#table {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgba(23, 32, 46, 1);
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    .color_standar{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: rgb(23, 32, 46);
+    }
+
+    .table-container {
+        width: 100%;
+        max-height: 400px; /* Chiều cao tối đa của bảng */
+        overflow-y: auto; /* Tạo thanh cuộn dọc cho dữ liệu */
+        overflow-x: auto; /* Ẩn thanh cuộn ngang nếu có */
+        position: relative;
+    }
+
+    .table_standard {
+        width: 100%;
+        border-collapse: collapse; /* Đảm bảo các đường kẻ được hiển thị đúng cách */
+    }
+
+    .table_standard thead {
+        position: sticky; /* Giữ phần header cố định */
+        top: 0;
+        z-index: 10; /* Đảm bảo phần header luôn hiển thị phía trên */
+        // background-color: #f2f2f2; /* Màu nền cho header */
+    }
+
+    .table_standard th,
+    .table_standard td {
+        // border: 1px solid #ddd; /* Thiết lập các đường kẻ giữa các ô */
+        padding: 8px; /* Khoảng cách giữa nội dung và đường kẻ */
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .table_standard th:first-child,
+    .table_standard td:first-child {
+        border-left: none;
+    }
+    .table_standard th:last-child,
+    .table_standard td:last-child {
+        border-right: none;
+    }
+    .table_standard th:first-child(9),
+    .table_standard td:first-child(9) {
+        border-right: none;
+    }
+
+    .table_standard th {
+        // background-color: #f2f2f2; /* Màu nền cho header */
+        text-align: left; /* Căn lề trái cho header */
+        color: rgba(139, 139, 139, 1);
+    }
+
+    .table_standard tr:nth-child(even) {
+        // background-color: #f9f9f9; /* Màu nền cho các dòng chẵn */
+    }
+
+    .table_standard tr:hover {
+        // background-color: #ddd; /* Màu nền khi hover vào dòng */
+    }
+
+    .table_standard td {
+        text-align: left; /* Căn lề trái cho dữ liệu trong bảng */
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .Table {
+        width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng */
+        margin: 20px 0; /* Khoảng cách giữa bảng và các phần tử khác */
+        padding: 0;
+        border: none; /* Bỏ khung xung quanh bảng */
+    }
+
+
+    /* Ẩn thanh cuộn của table-container */
+    .table-container::-webkit-scrollbar {
+        display: none;
+    }
+}
+

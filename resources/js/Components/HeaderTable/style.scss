@@ -1,0 +1,132 @@
+.TitleText {
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+
+    .title_text {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 24.34px;
+    }
+
+    .line_v {
+        width: 1px;
+        // height: 100%;
+        background-color: rgba(255, 255, 255, 1);
+        margin: 0 5px;
+    }
+
+    .Appel {
+        display: flex;
+        margin: 3px 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        width: 70px;
+        height: 25px;
+
+        img {
+            margin: 3px 0px;
+            margin-left: 8px;
+        }
+
+        p {
+            color: white;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 12px;
+            line-height: 16.34px;
+            text-indent: 5px;
+            margin: 3px 0px;
+        }
+    }
+
+    .email {
+        display: flex;
+        border-radius: 3px;
+        width: 70px;
+        height: 25px;
+        margin: 3px 5px;
+
+        img {
+            margin: 3px 0px;
+            margin-left: 8px;
+        }
+
+        p {
+            color: rgba(139, 139, 139, 1);
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 12px;
+            line-height: 16.34px;
+            text-indent: 5px;
+            margin: 3px 0px;
+        }
+    }
+
+    .title4 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+    .title5 {
+        color: white;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 2px;
+        margin: 3px 5px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        width: 70px;
+        height: 25px;
+    }
+
+    .title6 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+    .title7 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+    .title8 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+    .title9 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+    .title10 {
+        color: rgba(139, 139, 139, 1);
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 12px;
+        line-height: 16.34px;
+        text-indent: 5px;
+        margin: 3px 5px;
+    }
+
+}

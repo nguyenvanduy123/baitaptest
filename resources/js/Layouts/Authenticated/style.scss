@@ -1,0 +1,21 @@
+#main_page {
+    display: flex;
+    width: 100%;
+    background: #ffffff;
+    justify-content: space-between;
+    .left_main {
+        width: 48px;
+        z-index: 100;
+        height: 100%;
+    }
+    .right_main {
+        width: calc(100% - 48px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: rgba(9, 9, 26, 1);
+    }
+    .content {
+        // margin: 10px;
+    }
+}
